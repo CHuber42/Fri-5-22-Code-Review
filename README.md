@@ -36,7 +36,8 @@ Provide a link to a page presenting a form to create a new Order for a particula
 
 ##### Development specs:
 
-** Spec 1: 
+** Spec 1: Add a rudimentary homepage (localhost:5000/) that welcomes Pierre (The app host) and redirects him to the vendors page **
+** Spec 2: Add a HttpGet route to VendorsController as a list-of-vendors homepage, and an index view to display this path on **
 
 ##### _Contact_:
 
