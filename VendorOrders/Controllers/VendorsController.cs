@@ -11,5 +11,11 @@ namespace VendorOrders.Controllers
     {
       return View("Index");
     }
+
+    [HttpGet("/vendors/new")]
+    public ActionResult Form()
+    {
+      return View("Form");
+    }
   }
 }

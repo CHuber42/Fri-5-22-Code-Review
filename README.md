@@ -38,6 +38,9 @@ Provide a link to a page presenting a form to create a new Order for a particula
 
 ** Spec 1: Add a rudimentary homepage (localhost:5000/) that welcomes Pierre (The app host) and redirects him to the vendors page **
 ** Spec 2: Add a HttpGet route to VendorsController as a list-of-vendors homepage, and an index view to display this path on **
+** Spec 3: Add option to Spec #2 to create a new Vendor by clicking a link ** 
+** Spec 4: Add route to VendorsController to "catch" spec 3, redirect to Form view **
+** Spec 5: Add Form.cshtml and rudimentary form to handle new Vendor creation **
 
 ##### _Contact_:
 
