@@ -1,4 +1,7 @@
 @using VendorOrders.Models;
+@{
+  Layout = "_Layout";
+}
 
 <h1>@Model.Name's Orders</h1>
 
@@ -13,7 +16,3 @@
   <span><a href="/vendors/@Model.Id/orders/@order.Id">Order Title: @order.Title<br>Order Id: @order.Id</a></span><br><br>
 }
 
-<p>
-<a href="/vendors">Vendor Homepage</a><br>
-<a href="/">Home</a>
-</p>

@@ -12,12 +12,14 @@
 ##### Build instructions/Installation: 
 
 This project is built in C# 8.0 using .netcoreapp2.2 on a system running Ubuntu 18.04.
-Dependencies are declared in the VendorOrders.csproj and VendorOrders.Tests.csproj files in their respective folders;
-to install, simply clone (or download) this folder into a new directory, git bash to ./VendorOrders/ folder,
+Dependencies are declared in the VendorOrders.csproj and VendorOrders.Tests.csproj files in their respective folders.
+.NetCoreApp 2.2 Framework is required.
+
+To install, simply clone (or download) this folder into a new directory, git bash to VendorOrders.Solution/VendorOrders/ folder,
 and run dotnet restore.
 
 To run: either build the project using dotnet build and run the .exe, or navigate to the
-./wordcounter/ folder in a terminal and enter "dotnet run"
+VendorOrders.Solution/VendorOrders/ folder in a terminal and enter "dotnet run"
 
 ##### Development Description:
 
@@ -57,6 +59,10 @@ Provide a link to a page presenting a form to create a new Order for a particula
 ** Spec 17: Write Create() route to handle new-order-form-submission; redirect to --> Previously displayed Vendor **
 ** Spec 18: Update Spec 17 to instantiate a new order from params, add order to list in Vendor's list of orders **
 ** Spec 19: Add Show() route to OrdersController, Show.cshtml in views/orders **
+# Core functionality Complete
+
+**Spec 20: Stretch goal: implement Partials (Footer) **
+
 
 ##### _Contact_:
 
