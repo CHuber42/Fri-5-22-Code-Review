@@ -52,6 +52,10 @@ Provide a link to a page presenting a form to create a new Order for a particula
 
 ** Spec 13: Add basic backbone for Orders using assigned rubric (title, descrip, price, date) **
 ** Spec 14: Add non-static list of orders to Vendors class w/empty list instantiation in constructor **
+** Spec 15: Create new OrdersController to handle redirect to New() form for new Vendor's order **
+** Spec 16: Add html form to Views/Orders/New.cshtml to take in fields for new-order instantiation **
+** Spec 17: Write Create() route to handle new-order-form-submission; redirect too --> Previously displayed Vendor **
+** Spec 18: 
 
 ##### _Contact_:
 

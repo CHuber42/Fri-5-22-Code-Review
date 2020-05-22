@@ -8,11 +8,13 @@ namespace VendorOrders.Models
     public string Name {get; set;}
     public int Id {get; set;}
     private static List<Vendor> _instances = new List<Vendor>{}; 
+    public List <Order> Orders {get; set;}
     public Vendor(string name)
     {
       _instances.Add(this);
       Id = _instances.Count;
       Name = name;
+      Orders = new List<Order>{};
     }
 
     public static List<Vendor> GetAll()

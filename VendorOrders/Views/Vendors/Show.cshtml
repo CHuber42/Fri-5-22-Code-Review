@@ -2,6 +2,17 @@
 
 <h1>@Model.Name's Orders</h1>
 
+@if (Model.Orders.Count == 0)
+{
+  <p>No orders to show yet!</p>
+}
+<p>Add a new order for this vendor <a href="/vendors/@Model.Id/orders/new">here</a>.</p>
+
+@foreach (Order order in Model.Orders)
+{
+  <a href="/vendors/@Model.Id/orders/@order.Id">@order.Title</a>
+}
+
 <p>Here by mistake?</p>
 <a href="/vendors">Vendor Homepage</a><br>
 <a href="/">Home</a>

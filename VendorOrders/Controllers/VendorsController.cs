@@ -15,9 +15,9 @@ namespace VendorOrders.Controllers
     }
 
     [HttpGet("/vendors/new")]
-    public ActionResult Form()
+    public ActionResult New()
     {
-      return View("Form");
+      return View("New");
     }
 
     [HttpPost("/vendors")]
@@ -34,7 +34,7 @@ namespace VendorOrders.Controllers
       return View("Show", selectedVendor);
     }
 
-
+    
     
   }
 }
