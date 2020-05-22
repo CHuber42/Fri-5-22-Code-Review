@@ -56,6 +56,7 @@ Provide a link to a page presenting a form to create a new Order for a particula
 ** Spec 16: Add html form to Views/Orders/New.cshtml to take in fields for new-order instantiation **
 ** Spec 17: Write Create() route to handle new-order-form-submission; redirect to --> Previously displayed Vendor **
 ** Spec 18: Update Spec 17 to instantiate a new order from params, add order to list in Vendor's list of orders **
+** Spec 19: Add Show() route to OrdersController, Show.cshtml in views/orders **
 
 ##### _Contact_:
 

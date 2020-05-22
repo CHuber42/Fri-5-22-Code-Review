@@ -1,0 +1,13 @@
+@using VendorOrders.Models;
+
+<p>Order Details</p>
+
+<p>Title: @Model.Orders[@Model.TargetOrder].Title</p>
+<p>Description: @Model.Orders[@Model.TargetOrder].Description</p>
+<p>Price: @Model.Orders[@Model.TargetOrder].Price</p>
+<p>Date: @Model.Orders[@Model.TargetOrder].Date</p>
+<p>Order Id: @Model.Orders[@Model.TargetOrder].Id</p>
+
+<span>Back to <a href="/vendors/@Model.Id">@Model.Name's orders</a>.</span><br>
+<a href="/vendors">Vendor Homepage</a><br>
+<a href="/">Home</a>
