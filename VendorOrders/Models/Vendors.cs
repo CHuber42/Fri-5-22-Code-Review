@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+
+namespace VendorOrders.Models
+{
+  public class Vendor
+  {
+    public string Name {get; set;}
+    public int Id {get; set;}
+    private static List<Vendor> _instances = new List<Vendor>{}; 
+    public Vendor(string name)
+    {
+      _instances.Add(this);
+      Id = _instances.Count;
+      Name = name;
+    }
+
+    public static List<Vendor> GetAll()
+    {
+      return _instances;
+    }
+
+    public static Vendor Find(int id)
+    {
+      return _instances[id - 1];
+    }
+  }
+}

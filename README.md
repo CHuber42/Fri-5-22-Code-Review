@@ -41,6 +41,12 @@ Provide a link to a page presenting a form to create a new Order for a particula
 ** Spec 3: Add option to Spec #2 to create a new Vendor by clicking a link ** 
 ** Spec 4: Add route to VendorsController to "catch" spec 3, redirect to Form view **
 ** Spec 5: Add Form.cshtml and rudimentary form to handle new Vendor creation **
+** Spec 6: Add Vendor Class backbone to instantiate during Form submission/Create() Route **
+** Spec 7: Add static list of instances of vendors (_instances) to Vendor class **
+** Spec 8: Add Id Attribute + constructor assignment **
+** Spec 9: Add Name Attribute to Vendor and assign in constructor with passed-in value from Create() Form **
+** Spec 10: Modify Vendors' Index.cshtml route to take a model argument ** 
+** Spec 11: Add loop to Vendors' index.cshtml to display current vendors **
 
 ##### _Contact_:
 
