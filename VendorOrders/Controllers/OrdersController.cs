@@ -1,6 +1,5 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using VendorOrders.Models;
 
 namespace VendorOrders.Controllers
@@ -31,8 +30,6 @@ namespace VendorOrders.Controllers
         i++;
       }
       thisVendor.TargetOrder = i;
-
-
       return View("Show", thisVendor);
     }
   }

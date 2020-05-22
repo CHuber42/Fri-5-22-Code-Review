@@ -1,10 +1,11 @@
 @using VendorOrders.Models;
 
-<p>Order Details</p>
+<h1>Order Details</h1>
 
+<p>Vendor: @Model.Name</p>
 <p>Title: @Model.Orders[@Model.TargetOrder].Title</p>
 <p>Description: @Model.Orders[@Model.TargetOrder].Description</p>
-<p>Price: @Model.Orders[@Model.TargetOrder].Price</p>
+<p>Price: $@Model.Orders[@Model.TargetOrder].Price</p>
 <p>Date: @Model.Orders[@Model.TargetOrder].Date</p>
 <p>Order Id: @Model.Orders[@Model.TargetOrder].Id</p>
 

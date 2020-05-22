@@ -10,7 +10,7 @@
 
 @foreach (Order order in Model.Orders)
 {
-  <span>Order: <a href="/vendors/@Model.Id/orders/@order.Id">@order.Title</a></span><br>
+  <span><a href="/vendors/@Model.Id/orders/@order.Id">Order Title: @order.Title<br>Order Id: @order.Id</a></span><br><br>
 }
 
 <p>
