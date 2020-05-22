@@ -8,16 +8,12 @@ namespace VendorOrders.Controllers
   public class OrdersController : Controller
   {
     [HttpGet("/vendors/{Id}/orders/new")]
-    public ActionResult New()
+    public ActionResult New(int Id)
     {
-      return View("New");
+      Vendor thisVendor = Vendor.Find(Id);
+      return View("New", thisVendor);
     }
 
-    [HttpPost("/vendors/{Id}/orders")]
-    public ActionResult Create(string title, string description, double price, DateTime date, int Id)
-    {
-      
-      return RedirectToAction("Show", "Vendors", Id);
-    }
+    
   }
 }

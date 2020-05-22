@@ -2,15 +2,16 @@
 
 <h1>New Order for this Vendor</h1>
 
-<form action="/vendors/{Id}/orders/" method="post">
+<form action="/vendors/@Model.Id/orders/" method="post">
   <label for="title">Title of Order</label>
   <input type="text" name="title" id="title" placeholder="Order Title"><br>
   <label for="description">Order Description</label>
   <input type="text" name="description" id="description" placeholder="Order Description"><br>
   <label for="price">Order Price</label>
   <input type="number" name="price" id="price" placeholder="Order Price" min="1"><br>
-  <label for="date">Order Date</label>
-  <input type="date" name="date" id="date" placeholder="date"><br>
+  <label for="orderdate">Order Date</label>
+  <input type="date" name="orderdate" id="orderdate" placeholder="date"><br>
+  <input id="Id" name="Id" type="hidden" value="@Model.Id">
 
   <button type="submit">Add Order</button>
 </form>

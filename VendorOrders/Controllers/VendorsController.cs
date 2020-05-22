@@ -34,6 +34,15 @@ namespace VendorOrders.Controllers
       return View("Show", selectedVendor);
     }
 
+    [HttpPost("/vendors/{Id}/orders")]
+    public ActionResult Create(string title, string description, double price, DateTime orderdate, int Id)
+    {
+      Vendor orderOwner = Vendor.Find(Id);
+      Order newOrder = new Order(title, description, price, orderdate);
+      orderOwner.AddOrder(newOrder);
+      return RedirectToAction("Show");
+    }
+
     
     
   }

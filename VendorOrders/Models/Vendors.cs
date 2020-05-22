@@ -26,5 +26,10 @@ namespace VendorOrders.Models
     {
       return _instances[id - 1];
     }
+
+    public void AddOrder(Order newOrder)
+    {
+      Orders.Add(newOrder);
+    }
   }
 }
