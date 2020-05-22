@@ -10,7 +10,8 @@ namespace VendorOrders.Controllers
     [HttpGet("/vendors")]
     public ActionResult Index()
     {
-      return View("Index");
+      List<Vendor> allVendors = Vendor.GetAll();
+      return View("Index", allVendors);
     }
 
     [HttpGet("/vendors/new")]
@@ -25,6 +26,14 @@ namespace VendorOrders.Controllers
       Vendor newVendor = new Vendor(name);
       return RedirectToAction("Index");
     }
+
+    [HttpGet("/vendors/{Id}")]
+    public ActionResult Show(int Id)
+    {
+      Vendor selectedVendor = Vendor.Find(Id);
+      return View("Show", selectedVendor);
+    }
+
 
     
   }

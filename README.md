@@ -47,6 +47,11 @@ Provide a link to a page presenting a form to create a new Order for a particula
 ** Spec 9: Add Name Attribute to Vendor and assign in constructor with passed-in value from Create() Form **
 ** Spec 10: Modify Vendors' Index.cshtml route to take a model argument ** 
 ** Spec 11: Add loop to Vendors' index.cshtml to display current vendors **
+** Spec 12: Make current vendors clickable/use dynamic routing to display unique page for each Vendor **
+# As of this point, Vendor/Cshtml routing is mostly complete. Following specs involve compounding behavior regarding "Orders"
+
+** Spec 13: Add basic backbone for Orders using assigned rubric (title, descrip, price, date) **
+** Spec 14: Add non-static list of orders to Vendors class w/empty list instantiation in constructor **
 
 ##### _Contact_:
 
