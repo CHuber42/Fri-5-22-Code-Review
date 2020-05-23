@@ -21,7 +21,6 @@ namespace VendorOrders.Controllers
       bool found = false;
       while (!found)
       {
-        Console.WriteLine(i.ToString());
         if (orderId == thisVendor.Orders[i].Id)
         {
           found = true;
